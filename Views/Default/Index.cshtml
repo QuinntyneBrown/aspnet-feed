@@ -1,0 +1,5 @@
+﻿@model AspNetFeed.Web.ViewModels.PageViewModel
+
+<div>
+    @Html.Partial(Model.GetByName("FeedList").ViewLocation, Model.GetByName("FeedList"))
+</div>

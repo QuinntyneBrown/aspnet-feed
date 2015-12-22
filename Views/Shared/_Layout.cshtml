@@ -1,0 +1,16 @@
+﻿@model AspNetFeed.Web.ViewModels.PageViewModel
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed List</title>
+</head>
+<body>
+    <div>
+        @Html.Partial(Model.GetHeader().ViewLocation, Model.GetHeader())
+        @RenderBody()
+        @Html.Partial(Model.GetFooter().ViewLocation, Model.GetFooter())
+    </div>    
+</body>
+</html>
