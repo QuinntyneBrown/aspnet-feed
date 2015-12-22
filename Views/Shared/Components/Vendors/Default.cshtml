@@ -1,0 +1,15 @@
+﻿@model AspNetFeed.Web.ViewComponents.VendorsViewComponent
+
+<div>
+    <h1>Vendors</h1>
+    @foreach (var vendor in Model.Vendors)
+    {
+        <div>
+            <h1>@vendor.Name</h1>
+            <a href="@vendor.Href">
+                <img src="@vendor.ImageUrl" width="500" />
+            </a>
+        </div>
+    }
+
+</div>

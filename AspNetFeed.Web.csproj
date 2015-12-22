@@ -144,6 +144,14 @@
     <Content Include="Views\Shared\Components\FeedList\Default.cshtml" />
     <Content Include="Views\Shared\Components\Header\Default.cshtml" />
     <Content Include="Views\Shared\Components\Footer\Default.cshtml" />
+    <Content Include="Views\Shared\Components\Vendors\Default.cshtml" />
+    <Content Include="wwwroot\assets\wedding_1.jpg" />
+    <Content Include="wwwroot\assets\wedding_2.jpg" />
+    <Content Include="wwwroot\assets\wedding_3.jpg" />
+    <Content Include="wwwroot\assets\wedding_4.jpg" />
+    <Content Include="wwwroot\assets\wedding_5.jpg" />
+    <Content Include="wwwroot\assets\wedding_6.jpg" />
+    <Content Include="Views\Shared\Components\Vendor\Default.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -161,11 +169,13 @@
     <Compile Include="Clients\HttpClientHelper.cs" />
     <Compile Include="Clients\Client.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Data\VendorRepository.cs" />
     <Compile Include="Extensions\RouteExtensions.cs" />
     <Compile Include="Filters\SetRouteParams.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Vendor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\Contracts\IRouteParamsProvider.cs" />
     <Compile Include="Providers\RouteParamsProvider.cs" />
@@ -175,6 +185,8 @@
     <Compile Include="ViewComponents\FeedListViewComponent.cs" />
     <Compile Include="ViewComponents\FooterViewComponent.cs" />
     <Compile Include="ViewComponents\HeaderViewComponent.cs" />
+    <Compile Include="ViewComponents\VendorViewComponent.cs" />
+    <Compile Include="ViewComponents\VendorsViewComponent.cs" />
     <Compile Include="ViewModels\PageViewModel.cs" />
   </ItemGroup>
   <ItemGroup />

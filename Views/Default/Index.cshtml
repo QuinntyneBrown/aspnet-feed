@@ -1,5 +1,7 @@
 ﻿@model AspNetFeed.Web.ViewModels.PageViewModel
 
 <div>
-    @Html.Partial(Model.GetByName("FeedList").ViewLocation, Model.GetByName("FeedList"))
+
+    @foreach(var viewComponent in Model.GetBody()) { @Html.Partial(viewComponent.ViewLocation, viewComponent); }        
+    
 </div>

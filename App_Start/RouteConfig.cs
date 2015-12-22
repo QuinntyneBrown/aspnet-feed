@@ -11,10 +11,18 @@ namespace AspNetFeed.Web
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.Map(
+                name: "Vendor",
+                url: "vendor/{vendorName}",
+                defaults: new { controller = "Default", action = "Index" }
+            );
+
+            routes.Map(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller="Default", action = "Index", id = UrlParameter.Optional }
             );
+
+
         }
     }
 }
